@@ -1,4 +1,3 @@
-
 GUI
 $Apps
 $Settings
@@ -7,5 +6,8 @@ $Restart
 $Exit to Edo-P
 Date and Time
 $Date and time.
+Games
+$Tic Tac Toe.
+$Country War
 Help
 $Manual
