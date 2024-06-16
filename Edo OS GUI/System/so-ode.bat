@@ -48,6 +48,7 @@ if %Menu_Option%==0 goto mouse
 if %Menu_Option%==1 goto menu1
 if %Menu_Option%==2 goto menu2
 if %Menu_Option%==3 goto menu3
+if %Menu_Option%==4 goto menu4
 goto mouse
 :menu1
 if %Submenu_option%==1 goto apps
@@ -55,15 +56,19 @@ if %Submenu_option%==2 goto settings
 if %Submenu_option%==3 goto shutdown
 if %Submenu_option%==4 goto restart
 if %Submenu_option%==5 goto edo-p
-if %Menu_option%==0 goto mouse
+
 goto mouse
 :menu2
 if %Submenu_option%==1 goto dateandtime
-if %Menu_option%==0 goto mouse
+
 goto mouse
 :menu3
+if %Submenu_option%==1 call ttt.bat
+if %Submenu_option%==2 call cw.bat
+goto mouse
+:menu4
 if %Submenu_option%==1 goto help
-if %Menu_option%==0 goto mouse
+
 goto mouse
 :apps
 cls
