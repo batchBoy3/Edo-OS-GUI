@@ -12,7 +12,7 @@
   echo               (2) Average
   echo               (3) Hard  
   CHOICE /c:123q /n > nul
-  if errorlevel 4 goto end
+  if errorlevel 4 goto END
   if errorlevel 3 set sl=3
   if errorlevel 3 goto layout
   if errorlevel 2 set sl=2
@@ -302,21 +302,21 @@
   goto layout
 
 :END
-  cls
-  echo Tic Tac Toe for Edo OS GUI
-  echo.
-  REM Clear all variables (no spaces after equal sign).
-  set gw=
-  set nm=
-  set sl=
-  set pt=
-  set t1=
-  set t2=
-  set t3=
-  set t4=
-  set t5=
-  set t6=
-  set t7=
-  set t8=
-  set t9=
-goto mouse
+cls
+echo Tic Tac Toe for Edo OS GUI
+echo.
+REM Clear all variables (no spaces after equal sign).
+set gw=
+set nm=
+set sl=
+set pt=
+set t1=
+set t2=
+set t3=
+set t4=
+set t5=
+set t6=
+set t7=
+set t8=
+set t9=
+call so-ode.bat

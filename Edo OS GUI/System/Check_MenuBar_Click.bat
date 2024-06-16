@@ -15,9 +15,14 @@ IF %~1 GEQ 6 If %~1 LSS 22 If %~2 EQU 0 (
 	Call List.bat 6 1 f0 "Date and time." 
 	Set __Sub_Menu=!Errorlevel!
 )
-IF %~1 GEQ 22 If %~1 LSS 29 If %~2 EQU 0 (
+IF %~1 GEQ 22 If %~1 LSS 30 If %~2 EQU 0 (
 	Set __Main_Menu=3
-	Call List.bat 22 1 f0 "Manual" 
+	Call List.bat 22 1 f0 "Tic Tac Toe." "Country War" 
+	Set __Sub_Menu=!Errorlevel!
+)
+IF %~1 GEQ 30 If %~1 LSS 37 If %~2 EQU 0 (
+	Set __Main_Menu=4
+	Call List.bat 30 1 f0 "Manual" 
 	Set __Sub_Menu=!Errorlevel!
 )
 
