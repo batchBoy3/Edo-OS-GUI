@@ -20,6 +20,8 @@ Call loading 3 3 50 87 # 2 Fill %%A
 	)
 cls
 :mouse
+Batbox /g 0 8 /d "                                                                    "
+ping localhost -n 1 >nul
 Batbox /g 0 7 /d "                                                                    "
 ping localhost -n 1 >nul
 Batbox /g 0 6 /d "                                                                    "
