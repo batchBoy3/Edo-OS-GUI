@@ -14,11 +14,11 @@ if not exist Loading.bat goto fatalerror
 if not exist MenuBar.Bat goto fatalerror
 if not exist wget.exe goto fatalerror
 Batbox /g 24 2 /d "Edo OS GUI"
-:: For /l %%A in (0,1,100) Do (
-::	Call loading 3 3 50 87 # 2 Fill %%A
-:: 	batbox /w 100
-::	)
-	cls
+For /l %%A in (0,1,100) Do (
+Call loading 3 3 50 87 # 2 Fill %%A
+	batbox /w 100
+	)
+cls
 :mouse
 Batbox /g 0 7 /d "                                                                    "
 ping localhost -n 1 >nul
