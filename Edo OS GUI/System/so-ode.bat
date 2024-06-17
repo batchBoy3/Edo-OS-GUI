@@ -14,10 +14,10 @@ if not exist Loading.bat goto fatalerror
 if not exist MenuBar.Bat goto fatalerror
 if not exist wget.exe goto fatalerror
 Batbox /g 24 2 /d "Edo OS GUI"
-For /l %%A in (0,1,100) Do (
-Call loading 3 3 50 87 # 2 Fill %%A
-	batbox /w 100
-	)
+:: For /l %%A in (0,1,100) Do (
+:: Call loading 3 3 50 87 # 2 Fill %%A
+::	batbox /w 100
+::	)
 cls
 :mouse
 Batbox /g 0 8 /d "                                                                    "
@@ -79,11 +79,11 @@ Call Box 6 6 20 40 - - 87 2
 
 :Loop1
 
-Call Button  8 8 "Notepad" 8 12 "Explorer" 32 21 "Quit" # Press
+Call Button  8 8 "Calculator" 8 12 "Explorer" 32 21 "Quit" # Press
 Getinput /m %Press% /h 70
 
 :: Check for the pressed button 
-if %errorlevel%==1 goto notepad
+if %errorlevel%==1 goto Calculator
 if %errorlevel%==2 goto explorer
 if %errorlevel%==3 goto quitapps
 goto Loop1
@@ -99,7 +99,22 @@ goto mouse
 cls
 goto mouse
 :settings
-cls
+Batbox /g 0 8 /d "                                                                    "
+ping localhost -n 1 >nul
+Batbox /g 0 7 /d "                                                                    "
+ping localhost -n 1 >nul
+Batbox /g 0 6 /d "                                                                    "
+ping localhost -n 1 >nul
+Batbox /g 0 5 /d "                                                                    "
+ping localhost -n 1 >nul
+Batbox /g 0 4 /d "                                                                    "
+ping localhost -n 1 >nul
+Batbox /g 0 3 /d "                                                                    "
+ping localhost -n 1 >nul
+Batbox /g 0 2 /d "                                                                    "
+ping localhost -n 1 >nul
+Batbox /g 0 1 /d "                                                                    "
+ping localhost -n 1 >nul
 call MenuBar FileMain f0
 Call Box 6 6 20 60 - - 87 2
 :Loop2
@@ -121,6 +136,7 @@ Batbox /g 20 21 /d "]["
 Batbox /g 20 22 /d "]["
 Batbox /g 20 23 /d "]["
 Batbox /g 20 24 /d "]["
+
 :choosetab
 Batbox /g 36 20 /d "Choose a tab."
 Call Button  8 8 "Users" 8 12 "D and T" 8 16 "System" 8 21 "Quit" # Press
@@ -278,6 +294,9 @@ Batbox /g 8 14 /d "All the apps are user friendly and do not require any hard wo
 Batbox /g 8 15 /d "Will dissapear in 15 sec."
 ping localhost -n 15 >nul
 cls
+goto mouse
+:Calculator
+call calc.bat
 goto mouse
 :fatalerror
 color 4F
