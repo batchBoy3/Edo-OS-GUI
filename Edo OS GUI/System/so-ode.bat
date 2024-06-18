@@ -76,7 +76,7 @@ if %Submenu_option%==2 cls & call cw.bat
 if %Submenu_option%==3 cls & call guess.bat
 if %Submenu_option%==4 cls & call droll.bat
 if %Submenu_option%==5 cls & call magic8.bat
-if %Submenu_option%==6 cls & call maze.bat
+
 
 goto mouse
 :menu3
