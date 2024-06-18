@@ -14,12 +14,22 @@ if not exist Loading.bat goto fatalerror
 if not exist MenuBar.Bat goto fatalerror
 if not exist wget.exe goto fatalerror
 Batbox /g 24 2 /d "Edo OS GUI"
-:: For /l %%A in (0,1,100) Do (
-:: Call loading 3 3 50 87 # 2 Fill %%A
-::	batbox /w 100
-::	)
+ For /l %%A in (0,1,46) Do (
+ Call loading 3 3 50 87 # 2 Fill %%A
+	batbox /w 5
+	)
+ For /l %%A in (46,1,86) Do (
+ Call loading 3 3 50 87 # 2 Fill %%A
+	batbox /w 280
+	)	
+ For /l %%A in (86,1,100) Do (
+ Call loading 3 3 50 87 # 2 Fill %%A
+	batbox /w 70
+	)
 cls
 :mouse
+Batbox /g 0 9 /d "                                                                    "
+ping localhost -n 1 >nul
 Batbox /g 0 8 /d "                                                                    "
 ping localhost -n 1 >nul
 Batbox /g 0 7 /d "                                                                    "
@@ -61,14 +71,15 @@ if %Submenu_option%==5 goto edo-p
 
 goto mouse
 :menu2
-if %Submenu_option%==1 goto dateandtime
+if %Submenu_option%==1 cls & call ttt.bat
+if %Submenu_option%==2 cls & call cw.bat
+if %Submenu_option%==3 cls & call guess.bat
+if %Submenu_option%==4 cls & call droll.bat
+if %Submenu_option%==5 cls & call magic8.bat
+if %Submenu_option%==6 cls & call maze.bat
 
 goto mouse
 :menu3
-if %Submenu_option%==1 call ttt.bat
-if %Submenu_option%==2 call cw.bat
-goto mouse
-:menu4
 if %Submenu_option%==1 goto help
 
 goto mouse
@@ -79,13 +90,14 @@ Call Box 6 6 20 40 - - 87 2
 
 :Loop1
 
-Call Button  8 8 "Calculator" 8 12 "Explorer" 32 21 "Quit" # Press
+Call Button  8 8 "Calculator" 8 12 "Explorer" 8 16 "Paint" 32 21 "Quit" # Press
 Getinput /m %Press% /h 70
 
 :: Check for the pressed button 
 if %errorlevel%==1 goto Calculator
 if %errorlevel%==2 goto explorer
-if %errorlevel%==3 goto quitapps
+if %errorlevel%==3 goto images
+if %errorlevel%==4 goto quitapps
 goto Loop1
 :notepad
 echo Not Ready
@@ -298,6 +310,10 @@ goto mouse
 :Calculator
 call calc.bat
 goto mouse
+:Images
+call paint.bat
+goto mouse
+
 :fatalerror
 color 4F
 echo FATAL ERROR

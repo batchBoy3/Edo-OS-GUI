@@ -1,5 +1,6 @@
 @echo off
 cls
+mode 94,22
 title Edo OS Install
 cd System
 Call Box 1 1 20 2 - - 87 1
@@ -130,13 +131,15 @@ For /l %%A in (78,1,98) Do (
 	Call loading 12 16 50 87 # 1 Fill %%A
 	batbox /w 100
 	)
+copy ttt.bat %edoinstall%
 ping localhost -n 2 >nul
 For /l %%A in (98,1,100) Do (
 	Call loading 12 16 50 87 # 1 Fill %%A
 	batbox /w 100
 	)
+copy cw.bat %edoinstall% >nul
 copy so-ode.bat %edoinstall% >nul
-call Box.bat 1 1 16 90 - - 87 1
+call Box.bat 1 1 20 90 - - 87 1
 Batbox /g 2 2 /d "Edo OS Installer"
 Batbox /g 18 6 /d "Setup Finished."
 ping localhost -n 3 >nul

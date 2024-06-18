@@ -4,10 +4,13 @@ $Settings
 $Shutdown
 $Restart
 $Exit to Edo-P
-Date and Time
-$Date and time.
+
 Games
 $Tic Tac Toe.
 $Country War
+$Guess
+$Random Number
+$Magic 8 Ball
+$Maze
 Help
 $Manual
