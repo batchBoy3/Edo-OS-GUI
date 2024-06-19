@@ -104,11 +104,6 @@ if %errorlevel%==5 goto notepad
 if %errorlevel%==6 goto settings
 if %errorlevel%==7 goto quitapps
 goto Loop1
-:notepad
-echo Not Ready
-ping localhost -n 2 >nul 
-cls
-goto mouse
 :Explorer
 call explorer.bat
 goto mouse
