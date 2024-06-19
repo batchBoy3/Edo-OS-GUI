@@ -10,6 +10,7 @@ Changelog
 VERSION 1!
 Added Notepad, Bug fixes, More apps, Timer.
 !!!!!!!!!!!!
+
 VERSION 0.89
 Added Settings as an app.
 
