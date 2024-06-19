@@ -6,7 +6,14 @@ If there are any bug report them to quantico.noreply@gmail.com
 
 Changelog
 =========
-VERSION 0.21
+!!!!!!!!!!!!
+VERSION 1!
+Added Notepad, Bug fixes, More apps, Timer.
+!!!!!!!!!!!!
+VERSION 0.89
+Added Settings as an app.
+
+VERSION 0.56
 Added Magic 8 ball
 
 
