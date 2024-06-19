@@ -6,6 +6,8 @@ If there are any bug report them to quantico.noreply@gmail.com
 
 Changelog
 =========
+Version 1.12
+Bug fixes.
 !!!!!!!!!!!!
 VERSION 1!
 Added Notepad, Bug fixes, More apps, Timer.
