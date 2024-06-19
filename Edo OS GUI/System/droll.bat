@@ -16,4 +16,5 @@ set /a rand=%random%%%100+1
 echo The random number is %rand%
 pause
 goto Loop4
+:quit
 call so-ode.bat

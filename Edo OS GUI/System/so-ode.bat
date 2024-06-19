@@ -1,4 +1,6 @@
 @echo off
+title Edo OS GUI
+:: Edo OS GUI - Does NOT let anybody use its code unless credit is provided on EVERY file.
 :filecheck
 cls
 if not exist batbox.exe goto fatalerror
@@ -86,18 +88,21 @@ goto mouse
 :apps
 cls
 call MenuBar FileMain f0
-Call Box 6 6 20 40 - - 87 2
+Call Box 6 6 26 40 - - 87 2
 
 :Loop1
 
-Call Button  8 8 "Calculator" 8 12 "Explorer" 8 16 "Paint" 32 21 "Quit" # Press
+Call Button  8 8 "Calculator" 8 12 "Explorer" 8 16 "Paint" 8 20 "Timer" 8 24 "Notepad" 8 28 "Settings" 32 28 "Quit" # Press
 Getinput /m %Press% /h 70
 
 :: Check for the pressed button 
 if %errorlevel%==1 goto Calculator
 if %errorlevel%==2 goto explorer
-if %errorlevel%==3 goto images
-if %errorlevel%==4 goto quitapps
+if %errorlevel%==3 goto paint
+if %errorlevel%==4 goto timer
+if %errorlevel%==5 goto notepad
+if %errorlevel%==6 goto settings
+if %errorlevel%==7 goto quitapps
 goto Loop1
 :notepad
 echo Not Ready
@@ -111,6 +116,7 @@ goto mouse
 cls
 goto mouse
 :settings
+
 Batbox /g 0 8 /d "                                                                    "
 ping localhost -n 1 >nul
 Batbox /g 0 7 /d "                                                                    "
@@ -127,6 +133,7 @@ Batbox /g 0 2 /d "                                                              
 ping localhost -n 1 >nul
 Batbox /g 0 1 /d "                                                                    "
 ping localhost -n 1 >nul
+cls
 call MenuBar FileMain f0
 Call Box 6 6 20 60 - - 87 2
 :Loop2
@@ -310,10 +317,15 @@ goto mouse
 :Calculator
 call calc.bat
 goto mouse
-:Images
+:paint
 call paint.bat
 goto mouse
-
+:timer
+call timer.bat
+goto mouse
+:notepad
+call notepad.bat
+goto mouse
 :fatalerror
 color 4F
 echo FATAL ERROR

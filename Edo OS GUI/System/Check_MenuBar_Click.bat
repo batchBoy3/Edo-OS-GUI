@@ -12,7 +12,7 @@ IF %~1 GEQ 0 If %~1 LSS 6 If %~2 EQU 0 (
 )
 IF %~1 GEQ 6 If %~1 LSS 14 If %~2 EQU 0 (
 	Set __Main_Menu=2
-	Call List.bat 6 1 f0 "Tic Tac Toe." "Country War" "Guess" "Dice Roller" "Name Generator" "Magic 8 Ball" "Maze" 
+	Call List.bat 6 1 f0 "Tic Tac Toe." "Country War" "Guess" "Random Number" "Magic 8 Ball" 
 	Set __Sub_Menu=!Errorlevel!
 )
 IF %~1 GEQ 14 If %~1 LSS 21 If %~2 EQU 0 (
