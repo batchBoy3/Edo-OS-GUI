@@ -8,7 +8,6 @@ Changelog
 =========
 Version 1.14
 Alteria FCP (file check program) added.
-Option to boot to FCP in OS
 
 Version 1.12
 Bug fixes.
