@@ -125,6 +125,7 @@ For /l %%A in (55,1,62) Do (
 copy List.bat %edoinstall% >nul
 copy Loading.bat %edoinstall% >nul
 copy paint.bat %edoinstall% >nul
+copy colous.exe %edoinstall%
 For /l %%A in (62,1,78) Do (
 	Call loading 12 16 50 87 # 1 Fill %%A
 	batbox /w 100
@@ -132,6 +133,7 @@ For /l %%A in (62,1,78) Do (
 copy MenuBar.bat %edoinstall% >nul
 copy wget.exe %edoinstall% >nul
 copy FCP.bat %edoinstall% >nul
+copy explorer.bat %edoinstall%
 For /l %%A in (78,1,98) Do (
 	Call loading 12 16 50 87 # 1 Fill %%A
 	batbox /w 100
@@ -147,7 +149,7 @@ For /l %%A in (98,1,100) Do (
 	)
 copy cw.bat %edoinstall% >nul
 copy so-ode.bat %edoinstall% >nul
-copy fn.dll %edoinstall% >nul
+copy Fn.dll %edoinstall% >nul
 copy droll.bat %edoinstall% >nul
 call Box.bat 1 1 20 90 - - 87 1
 Batbox /g 2 2 /d "Edo OS Installer"
