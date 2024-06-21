@@ -6,6 +6,9 @@ If there are any bug report them to quantico.noreply@gmail.com
 
 Changelog
 =========
+Version 1.16
+Setup needs fixing. Fixed around 50% DO NOT INSTALL UNTIL NEXT NOTICE
+
 Version 1.14
 Alteria FCP (file check program) added.
 
