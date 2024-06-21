@@ -1,0 +1,15 @@
+GUI
+$Apps
+$Settings
+$Shutdown
+$Restart
+$Exit to Edo-P
+
+Games
+$Tic Tac Toe.
+$Country War
+$Guess
+$Random Number
+$Magic 8 Ball
+Help
+$Manual

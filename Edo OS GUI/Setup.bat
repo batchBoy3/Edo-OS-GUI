@@ -95,6 +95,7 @@ call Box.bat 1 1 20 90 - - 87 1
 Batbox /g 30 4 /d "Installing..."
 copy batbox.exe %edoinstall% >nul
 copy Box.bat %edoinstall% >nul
+copy timer.bat %edoinstall% >nul
 if %errorlevel%==1 goto installerror
 For /l %%A in (0,1,23) Do (
 	Call loading 12 16 50 87 # 1 Fill %%A
@@ -102,16 +103,19 @@ For /l %%A in (0,1,23) Do (
 	)
 copy Button.bat %edoinstall% >nul
 copy Check_MenuBar_Click.bat %edoinstall% >nul
+copy calc.bat %edoinstall% >nul
 For /l %%A in (23,1,46) Do (
 	Call loading 12 16 50 87 # 1 Fill %%A
 	batbox /w 100
 	)
+copy magic8.bat %edoinstall% >nul
 copy GetDim.bat %edoinstall% >nul
 copy GetInput.exe %edoinstall% >nul
 For /l %%A in (46,1,55) Do (
 	Call loading 12 16 50 87 # 1 Fill %%A
 	batbox /w 100
 	)
+copy notepad.bat %edoinstall% >nul
 copy Getlen.bat %edoinstall% >nul
 copy getlen.exe %edoinstall% >nul
 For /l %%A in (55,1,62) Do (
@@ -120,18 +124,21 @@ For /l %%A in (55,1,62) Do (
 	)
 copy List.bat %edoinstall% >nul
 copy Loading.bat %edoinstall% >nul
+copy paint.bat %edoinstall% >nul
 For /l %%A in (62,1,78) Do (
 	Call loading 12 16 50 87 # 1 Fill %%A
 	batbox /w 100
 	)
 copy MenuBar.bat %edoinstall% >nul
 copy wget.exe %edoinstall% >nul
-
+copy FCP.bat %edoinstall% >nul
 For /l %%A in (78,1,98) Do (
 	Call loading 12 16 50 87 # 1 Fill %%A
 	batbox /w 100
 	)
-copy ttt.bat %edoinstall%
+copy board.bat %edoinstall% >nul
+copy ttt.bat %edoinstall% >nul
+copy guess.bat %edoinstall% >nul
 ping localhost -n 2 >nul
 For /l %%A in (98,1,100) Do (
 	Call loading 12 16 50 87 # 1 Fill %%A
@@ -139,9 +146,11 @@ For /l %%A in (98,1,100) Do (
 	)
 copy cw.bat %edoinstall% >nul
 copy so-ode.bat %edoinstall% >nul
+copy fn.dll %edoinstall% >nul
+copy droll.bat %edoinstall% >nul
 call Box.bat 1 1 20 90 - - 87 1
 Batbox /g 2 2 /d "Edo OS Installer"
 Batbox /g 18 6 /d "Setup Finished."
 ping localhost -n 3 >nul
-call so-ode.bat
+call FCP.bat
 exit
