@@ -49,7 +49,7 @@ ping localhost -n 1 >nul
 Batbox /g 0 1 /d "                                                                    "
 ping localhost -n 1 >nul
 
-call MenuBar FileMain f0
+call MenuBar FileMain.txt f0
 
 For /F "Delims=: Tokens=1,2,3" %%A in ('Batbox.exe /m') Do (
 	set Button=%%C
@@ -87,7 +87,7 @@ if %Submenu_option%==1 goto help
 goto mouse
 :apps
 cls
-call MenuBar FileMain f0
+call MenuBar FileMain.txt f0
 Call Box 6 6 26 40 - - 87 2
 
 :Loop1
@@ -129,7 +129,7 @@ ping localhost -n 1 >nul
 Batbox /g 0 1 /d "                                                                    "
 ping localhost -n 1 >nul
 cls
-call MenuBar FileMain f0
+call MenuBar FileMain.txt f0
 Call Box 6 6 20 60 - - 87 2
 :Loop2
 Batbox /g 20 7 /d "]["
@@ -164,7 +164,7 @@ if %errorlevel%==3 goto system
 if %errorlevel%==4 goto quitsettings
 goto Loop2
 :users
-call MenuBar FileMain f0
+call MenuBar FileMain.txt f0
 Call Box 6 6 20 60 - - 87 2
 
 Batbox /g 20 7 /d "]["
@@ -195,7 +195,7 @@ goto choosetab
 
 
 
-call MenuBar FileMain f0
+call MenuBar FileMain.txt f0
 Call Box 6 6 20 60 - - 87 2
 Batbox /g 22 13 /d "<=="
 Batbox /g 20 7 /d "]["
@@ -225,7 +225,7 @@ Batbox /g 0 2 /d "                            "
 Batbox /g 0 1 /d "                            "
 goto choosetab
 :system
-call MenuBar FileMain f0
+call MenuBar FileMain.txt f0
 Call Box 6 6 20 60 - - 87 2
 Batbox /g 22 17 /d "<=="
 Batbox /g 20 7 /d "]["
@@ -295,7 +295,7 @@ ping localhost -n 6 >nul
 goto filecheck
 :help
 cls
-call MenuBar FileMain f0
+call MenuBar FileMain.txt f0
 Call Box 6 6 20 88 - - 87 2
 
 Batbox /g 44 9 /d "Help"

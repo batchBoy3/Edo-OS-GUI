@@ -136,6 +136,7 @@ For /l %%A in (78,1,98) Do (
 	Call loading 12 16 50 87 # 1 Fill %%A
 	batbox /w 100
 	)
+copy FileMain.txt
 copy board.bat %edoinstall% >nul
 copy ttt.bat %edoinstall% >nul
 copy guess.bat %edoinstall% >nul
