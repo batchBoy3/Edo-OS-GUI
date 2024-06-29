@@ -10,6 +10,9 @@ DISABLE QUICK EDIT AND INSERT MODE IN CMD BEFORE RUNNING
 
 Changelog
 =========
+Version 1.25
+Bug fixes.
+
 Version 1.24
 Made the boot times faster with AMF (application memory free)
 
