@@ -56,4 +56,4 @@ goto menu
 
 :end
 endlocal
-call so-ode.bat
+call FCP.bat

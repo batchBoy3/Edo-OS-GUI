@@ -36,10 +36,9 @@ set /a "_CS=cs/2+1, cls=cs+10, _LS=ls/2+1, lns=ls+10"
 :: rb and tb need to stay constant
 set /a "rb=cs+1, bb=ls+1"
 
-mode con cols=%cls% lines=%lns%
 CALL :spinner 15
 
-set /p sts=Game or Draw?
+set /p sts=Type Draw for verifcation:
 
 :game
 
@@ -151,4 +150,4 @@ goto:eof
 	del Board%cls%%lns%.txt
 
 :return-to-os
-call so-ode.bat
+call FCP.bat

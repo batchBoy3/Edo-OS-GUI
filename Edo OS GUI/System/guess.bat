@@ -342,4 +342,4 @@ echo.
 echo.
 echo Well done! You completed the game! Returning to Edo OS GUI...
 ping localhost -n 4 >nul
-call so-ode.bat
+call FCP.bat

@@ -26,6 +26,6 @@ goto loop
 
 :timesup
 echo Time is up. Returning to Edo OS GUI...
+ping localhost -n 3 >nul
 
-
-call so-ode.bat
+call FCP.bat

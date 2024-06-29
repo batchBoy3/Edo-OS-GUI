@@ -726,3 +726,4 @@ goto players
 :suggest
 cls
 echo Loading...
+call FCP.bat
