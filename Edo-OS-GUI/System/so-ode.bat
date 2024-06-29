@@ -18,6 +18,7 @@ Batbox /g 24 2 /d "Edo OS GUI"
 	)
 cls
 :mouse
+call MenuBar FileMain.txt f0
 Batbox /g 0 9 /d "                                                                    "
 ping localhost -n 1 >nul
 Batbox /g 0 8 /d "                                                                    "
@@ -37,7 +38,6 @@ ping localhost -n 1 >nul
 Batbox /g 0 1 /d "                                                                    "
 ping localhost -n 1 >nul
 
-call MenuBar FileMain.txt f0
 
 For /F "Delims=: Tokens=1,2,3" %%A in ('Batbox.exe /m') Do (
 	set Button=%%C
