@@ -10,11 +10,11 @@ Batbox /g 24 2 /d "Edo OS GUI"
 	)
  For /l %%A in (46,1,86) Do (
  Call loading 3 3 50 87 # 2 Fill %%A
-	batbox /w 280
+	batbox /w 30
 	)	
  For /l %%A in (86,1,100) Do (
  Call loading 3 3 50 87 # 2 Fill %%A
-	batbox /w 70
+	batbox /w 20
 	)
 cls
 :mouse
