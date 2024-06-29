@@ -10,6 +10,9 @@ DISABLE QUICK EDIT AND INSERT MODE IN CMD BEFORE RUNNING
 
 Changelog
 =========
+Version 1.21
+Made apps (including games) boot to FCP instead of OS
+
 Version 1.20
 Restart fixed.
 
