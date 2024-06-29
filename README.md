@@ -10,6 +10,9 @@ DISABLE QUICK EDIT AND INSERT MODE IN CMD BEFORE RUNNING
 
 Changelog
 =========
+Version 1.42
+Stopped apps from rebooting the system after quiting.
+
 Version 1.28
 Bug fixes, Added RUN.bat for easier run when installing.
 
