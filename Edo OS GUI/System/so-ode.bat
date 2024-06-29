@@ -3,18 +3,6 @@ title Edo OS GUI
 :: Edo OS GUI - Does NOT let anybody use its code unless credit is provided on EVERY file.
 :filecheck
 cls
-if not exist batbox.exe goto fatalerror
-if not exist Box.bat goto fatalerror
-if not exist Button.bat goto fatalerror
-if not exist Check_MenuBar_Click.bat goto fatalerror
-if not exist GetDim.Bat goto fatalerror
-if not exist GetInput.exe goto fatalerror
-if not exist Getlen.bat goto fatalerror
-if not exist getlen.exe goto fatalerror
-if not exist List.bat goto fatalerror
-if not exist Loading.bat goto fatalerror
-if not exist MenuBar.Bat goto fatalerror
-if not exist wget.exe goto fatalerror
 Batbox /g 24 2 /d "Edo OS GUI"
  For /l %%A in (0,1,46) Do (
  Call loading 3 3 50 87 # 2 Fill %%A
@@ -267,7 +255,7 @@ exit
 Call Box 20 7 6 18 - - 87 2
 Batbox /g 22 9 /d "Please wait..."
 ping localhost -n 4 >nul
-goto filecheck
+call FCP.bat
 :edo-p
 cls
 Call Box 20 7 6 32 - - 87 2
