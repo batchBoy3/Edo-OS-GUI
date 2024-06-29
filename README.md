@@ -10,9 +10,11 @@ DISABLE QUICK EDIT AND INSERT MODE IN CMD BEFORE RUNNING
 
 Changelog
 =========
+Version 1.20
+Restart fixed.
+
 Version 1.18
 Setup fixed.
-
 
 Version 1.16
 Setup needs fixing. Fixed around 50% DO NOT INSTALL UNTIL NEXT NOTICE
