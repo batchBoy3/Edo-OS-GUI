@@ -115,6 +115,8 @@ For /l %%A in (46,1,55) Do (
 	Call loading 12 16 50 87 # 1 Fill %%A
 	batbox /w 100
 	)
+echo call FCP.bat > RUN.bat
+copy RUN.bat %edoinstall% >nul
 copy notepad.bat %edoinstall% >nul
 copy Getlen.bat %edoinstall% >nul
 copy getlen.exe %edoinstall% >nul
@@ -125,7 +127,7 @@ For /l %%A in (55,1,62) Do (
 copy List.bat %edoinstall% >nul
 copy Loading.bat %edoinstall% >nul
 copy paint.bat %edoinstall% >nul
-copy colous.exe %edoinstall%
+copy colous.exe %edoinstall% >nul
 For /l %%A in (62,1,78) Do (
 	Call loading 12 16 50 87 # 1 Fill %%A
 	batbox /w 100
@@ -133,12 +135,12 @@ For /l %%A in (62,1,78) Do (
 copy MenuBar.bat %edoinstall% >nul
 copy wget.exe %edoinstall% >nul
 copy FCP.bat %edoinstall% >nul
-copy explorer.bat %edoinstall%
+copy explorer.bat %edoinstall% >nul
 For /l %%A in (78,1,98) Do (
 	Call loading 12 16 50 87 # 1 Fill %%A
 	batbox /w 100
 	)
-copy FileMain.txt
+copy FileMain.txt %edoinstall% >nul
 copy board.bat %edoinstall% >nul
 copy ttt.bat %edoinstall% >nul
 copy guess.bat %edoinstall% >nul

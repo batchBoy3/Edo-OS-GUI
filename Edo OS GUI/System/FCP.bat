@@ -1,4 +1,6 @@
 @echo off
+:FCP
+color 07
 cls
 echo FCP is loading...
  
@@ -26,6 +28,7 @@ echo Press a key to boot to selected os.
 pause >nul
 call so-ode.bat
 :error
+cls
 color 4F
 echo ALTERIA FCP HAS FOUND FILES THAT ARE MISSING.
 echo.
