@@ -10,7 +10,7 @@ DISABLE QUICK EDIT AND INSERT MODE IN CMD BEFORE RUNNING
 
 Changelog
 =========
-1.46
+Version 1.46
 Bug fixes.
 
 Version 1.42
