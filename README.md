@@ -8,8 +8,18 @@ IMPORTANT
 =========
 DISABLE QUICK EDIT AND INSERT MODE IN CMD BEFORE RUNNING
 
+NOTE
+=========
+Soon I might make this OS run a 2d version of Doom, because you guys keep on saying "MAKE IT RUN DOOM MAKE IT RUN DOOM" so I will.
+
 Changelog
 =========
+Version 1.89
+Fixed LOTS of things, added browser, media player and Lots and LOTS of bug fixes. Made most external apps windowed and more.
+
+Version 1.??
+Not recorded because couldent find records
+
 Version 1.46
 Bug fixes.
 
