@@ -1,5 +1,5 @@
 @echo off
-mode 160,60
+mode 160,70
 :sounddiff
 taskkill /F /IM wscript.exe >nul
 cls
