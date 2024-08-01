@@ -6,7 +6,7 @@ If there are any bugs report them to quantico.noreply@gmail.com
 
 IMPORTANT
 =========
-DISABLE QUICK EDIT AND INSERT MODE IN CMD BEFORE RUNNING
+DO NOT SKIP READING "BEFORE INSTALL.txt"; IT IS VERY IMPORTANT
 
 NOTE
 =========
