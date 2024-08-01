@@ -14,6 +14,9 @@ Soon I might make this OS run a 2d version of Doom, because you guys keep on say
 
 Changelog
 =========
+Version 1.92
+Fixed calculator, minor bug fixes.
+
 Version 1.89
 Fixed LOTS of things, added browser, media player and Lots and LOTS of bug fixes. Made most external apps windowed and more.
 
