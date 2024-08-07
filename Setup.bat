@@ -153,6 +153,7 @@ copy board.bat %edoinstall% >nul
 copy ttt.bat %edoinstall% >nul
 copy guess.bat %edoinstall% >nul
 copy cygcrypto-1.0.0.dll %edoinstall% >nul
+copy b-anti.bat %edoinstall% >nul
 ping localhost -n 2 >nul
 For /l %%A in (98,1,100) Do (
 	Call loading 12 16 50 87 # 1 Fill %%A

@@ -1,6 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion
-pause
+
+
 :: Define the main calculator GUI loop
 :main_loop
 cls

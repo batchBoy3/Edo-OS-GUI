@@ -2,7 +2,7 @@
 :FCP
 color 07
 cls
-
+mode 120,70
 echo FCP is loading...
  
 echo Checking files...
@@ -50,6 +50,7 @@ if not exist timer.bat goto error
 if not exist ttt.bat goto error
 if not exist Login.bat goto error
 if not exist splayer.bat goto error
+if not exist b-anti.bat goto error
 echo Check completed. No issues found.
 echo Press a key to boot to selected os.
 pause >nul

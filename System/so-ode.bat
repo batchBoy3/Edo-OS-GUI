@@ -1,7 +1,6 @@
 @echo off
 title Edo OS GUI
 :: Edo OS GUI - Does NOT let anybody use its code unless credit is provided on EVERY file.
-:filecheck
 mode 160,70
 
 cls
@@ -13,6 +12,7 @@ Batbox /g 12 20 /d "Welcome to Edo OS GUI!"
 ping localhost -n 2 >nul
 Batbox /g 12 24 /d "Start an application using the menubar!"
 ping localhost -n 2 >nul
+
 :mouse
 call MenuBar FileMain.txt f0
 Batbox /g 0 9 /d "                                                                    "
@@ -76,7 +76,7 @@ Call Box 6 6 26 40 - - 87 2
 
 :Loop1
 
-Call Button 8 8 "Calculator" 8 12 "Explorer" 8 16 "Paint" 8 20 "Timer" 8 24 "Notepad" 8 28 "Settings" 32 28 "Quit" 26 8 "Browser" 26 12 "Music Player" # Press
+Call Button 8 8 "Calculator" 8 12 "Explorer" 8 16 "Paint" 8 20 "Timer" 8 24 "Notepad" 8 28 "Settings" 32 28 "Quit" 26 8 "Browser" 26 12 "Music Player" 26 18 "Antivirus" # Press
 Getinput /m %Press% /h 70
 
 :: Check for the pressed button 
@@ -89,6 +89,7 @@ if %errorlevel%==6 goto settings
 if %errorlevel%==7 goto quitapps
 if %errorlevel%==8 goto browser
 if %errorlevel%==9 goto splayer
+if %errorlevel%==10 goto anti
 goto Loop1
 :Explorer
 call explorer.bat
@@ -97,23 +98,6 @@ goto mouse
 cls
 goto mouse
 :settings
-
-Batbox /g 0 8 /d "                                                                    "
-ping localhost -n 1 >nul
-Batbox /g 0 7 /d "                                                                    "
-ping localhost -n 1 >nul
-Batbox /g 0 6 /d "                                                                    "
-ping localhost -n 1 >nul
-Batbox /g 0 5 /d "                                                                    "
-ping localhost -n 1 >nul
-Batbox /g 0 4 /d "                                                                    "
-ping localhost -n 1 >nul
-Batbox /g 0 3 /d "                                                                    "
-ping localhost -n 1 >nul
-Batbox /g 0 2 /d "                                                                    "
-ping localhost -n 1 >nul
-Batbox /g 0 1 /d "                                                                    "
-ping localhost -n 1 >nul
 cls
 call MenuBar FileMain.txt f0
 Call Box 6 6 20 60 - - 87 2
@@ -277,13 +261,13 @@ set /p edo-plist=">"
 if %edo-plist%==1 call Edo-P1.bat
 if %edo-plist%==2 call Edo-P1.21.bat
 if %edo-plist%==3 call Edo-P2.bat
-if %edo-plist%==x goto filecheck
-if %edo-plist%==X goto filecheck
+if %edo-plist%==x goto mouse
+if %edo-plist%==X goto mouse
 goto edo-p
 :edo-pnotfound
 echo If you are seeing this message, you have not installed Edo-P or you have not specified the correct directory.
 ping localhost -n 6 >nul
-goto filecheck
+goto mouse
 :help
 cls
 call MenuBar FileMain.txt f0
@@ -332,4 +316,7 @@ call links.exe
 goto mouse
 :splayer
 call splayer.bat
+goto mouse
+:anti
+call b-anti.bat
 goto mouse
