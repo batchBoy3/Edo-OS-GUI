@@ -1,6 +1,6 @@
 EDO OS GUI
 ==========
-Edo OS GUI is a batch os that can run on a unix/windows based os.
+Edo OS GUI is a batch os that can run on a windows based os.
 Edo OS GUI gets atleast 1 update every week/month. Keep yours updated!
 If there are any bugs report them to quantico.noreply@gmail.com
 
