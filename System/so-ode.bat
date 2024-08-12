@@ -288,11 +288,17 @@ goto mouse
 call calc.bat
 goto mouse
 :paint
+if exist paint.bat (
 call paint.bat
 goto mouse
+)
+goto boostdiskn
 :timer
+if exist timer.bat (
 call timer.bat
 goto mouse
+)
+goto boostdiskn
 :notepad
 call notepad.bat
 goto mouse
@@ -300,8 +306,11 @@ goto mouse
 call ttt.bat
 goto mouse
 :cw
+if exist cw.bat (
 call cw.bat
 goto mouse
+)
+goto boostdiskn
 :guess
 call guess.bat
 goto mouse
@@ -312,11 +321,37 @@ goto mouse
 call magic8.bat
 goto mouse
 :browser
+if exist links.exe (
 call links.exe
 goto mouse
+)
+goto boostdiskn
 :splayer
+if exist splayer.bat (
 call splayer.bat
 goto mouse
+)
+goto boostdiskn
 :anti
+if exist b-anti.bat (
 call b-anti.bat
 goto mouse
+)
+goto boostdiskn
+:boostdiskn
+cls
+color 47
+echo KERNAL PANIC
+echo ===================================
+echo.
+echo CODE.(000000x18)
+echo ACTION.(BOOST_DISK=NOTFOUND)
+echo MESSAGE.(INSERT_BOOST_DISK)
+echo MESSAGE.(PRESS_ANY_KEY_TO_RESTART_EDO_OS_GUI)
+echo.
+pause >nul
+echo MESSAGE.(INSERT_DRIVE_LETTER_FOR_BOOSTDISK)
+set /p boostdiskdrive=
+%boostdiskdrive%
+call boostdiskinstall.bat
+goto boostdiskn

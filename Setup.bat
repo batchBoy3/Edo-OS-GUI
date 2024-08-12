@@ -1,8 +1,9 @@
 @echo off
 cls
-mode 94,22
+
 title Edo OS Install
 cd System
+fstoggle 1
 Call Box 1 1 20 2 - - 87 1
 call Box.bat 1 1 20 6 - - 87 1
 ping localhost -n 1 >nul
@@ -94,76 +95,89 @@ call Box.bat 1 1 20 90 - - 87 1
 
 Batbox /g 30 4 /d "Installing..."
 copy batbox.exe %edoinstall% >nul
+if %errorlevel%==1 goto installerror
 copy Box.bat %edoinstall% >nul
-copy timer.bat %edoinstall% >nul
-copy links.exe %edoinstall% >nul
-copy splayer.bat %edoinstall% >nul
 if %errorlevel%==1 goto installerror
 For /l %%A in (0,1,23) Do (
 	Call loading 12 16 50 87 # 1 Fill %%A
 	batbox /w 100
 	)
 copy Button.bat %edoinstall% >nul
+if %errorlevel%==1 goto installerror
 copy Check_MenuBar_Click.bat %edoinstall% >nul
+if %errorlevel%==1 goto installerror
 copy calc.bat %edoinstall% >nul
-copy cygz.dll %edoinstall% >nul
+if %errorlevel%==1 goto installerror
+
 copy Login.bat %edoinstall% >nul
+if %errorlevel%==1 goto installerror
 For /l %%A in (23,1,46) Do (
 	Call loading 12 16 50 87 # 1 Fill %%A
 	batbox /w 100
 	)
 copy magic8.bat %edoinstall% >nul
+if %errorlevel%==1 goto installerror
 copy GetDim.bat %edoinstall% >nul
+if %errorlevel%==1 goto installerror
 copy GetInput.exe %edoinstall% >nul
-copy cygwin1.dll %edoinstall% >nul
+if %errorlevel%==1 goto installerror
 For /l %%A in (46,1,55) Do (
 	Call loading 12 16 50 87 # 1 Fill %%A
 	batbox /w 100
 	)
 echo call FCP.bat > RUN.bat
 copy RUN.bat %edoinstall% >nul
+if %errorlevel%==1 goto installerror
 copy notepad.bat %edoinstall% >nul
+if %errorlevel%==1 goto installerror
 copy Getlen.bat %edoinstall% >nul
+if %errorlevel%==1 goto installerror
 copy getlen.exe %edoinstall% >nul
-copy cygssl-1.0.0.dll %edoinstall% >nul
+if %errorlevel%==1 goto installerror
 For /l %%A in (55,1,62) Do (
 	Call loading 12 16 50 87 # 1 Fill %%A
 	batbox /w 100
 	)
 copy List.bat %edoinstall% >nul
+if %errorlevel%==1 goto installerror
 copy Loading.bat %edoinstall% >nul
-copy paint.bat %edoinstall% >nul
+if %errorlevel%==1 goto installerror
 copy colous.exe %edoinstall% >nul
-copy cyglzma-5.dll %edoinstall% >nul
+if %errorlevel%==1 goto installerror
 For /l %%A in (62,1,78) Do (
 	Call loading 12 16 50 87 # 1 Fill %%A
 	batbox /w 100
 	)
 copy MenuBar.bat %edoinstall% >nul
+if %errorlevel%==1 goto installerror
 copy wget.exe %edoinstall% >nul
+if %errorlevel%==1 goto installerror
 copy FCP.bat %edoinstall% >nul
+if %errorlevel%==1 goto installerror
 copy explorer.bat %edoinstall% >nul
-copy cyggcc_s-1.dll %edoinstall% >nul
+if %errorlevel%==1 goto installerror
 For /l %%A in (78,1,98) Do (
 	Call loading 12 16 50 87 # 1 Fill %%A
 	batbox /w 100
 	)
 copy FileMain.txt %edoinstall% >nul
-copy board.bat %edoinstall% >nul
+if %errorlevel%==1 goto installerror
 copy ttt.bat %edoinstall% >nul
+if %errorlevel%==1 goto installerror
 copy guess.bat %edoinstall% >nul
-copy cygcrypto-1.0.0.dll %edoinstall% >nul
-copy b-anti.bat %edoinstall% >nul
+if %errorlevel%==1 goto installerror
 ping localhost -n 2 >nul
 For /l %%A in (98,1,100) Do (
 	Call loading 12 16 50 87 # 1 Fill %%A
 	batbox /w 100
 	)
-copy cw.bat %edoinstall% >nul
+
 copy so-ode.bat %edoinstall% >nul
+if %errorlevel%==1 goto installerror
 copy Fn.dll %edoinstall% >nul
+if %errorlevel%==1 goto installerror
 copy droll.bat %edoinstall% >nul
-copy cygbz2-1.dll %edoinstall% >nul
+if %errorlevel%==1 goto installerror
 call Box.bat 1 1 20 90 - - 87 1
 Batbox /g 2 2 /d "Edo OS Installer"
 Batbox /g 18 6 /d "Setup Finished."
