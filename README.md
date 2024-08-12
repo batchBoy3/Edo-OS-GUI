@@ -14,11 +14,17 @@ Soon I might make this OS run a 2d version of Doom, because you guys keep on say
 
 Changelog
 =========
+Version 2.14
+Making 2D Version of DOOM. (BCD)
+
+Version 2!!!
+Fixed lots of things, added Update Checkpoints. Added Boost CD, OS now costs £1 or 5zl. You can get free version here on github but you need to pay for Boost CD. If a version has "BCD" on it, it is only with the boost CD.
+
 Version 1.92
 Fixed calculator, minor bug fixes.
 
 Version 1.89
-Fixed LOTS of things, added browser, media player and Lots and LOTS of bug fixes. Made most external apps windowed and more.
+Fixed LOTS of things, added browser (BCD), media player (BCD) and Lots and LOTS of bug fixes. Made most external apps windowed and more.
 
 Version 1.??
 Not recorded because couldent find records
@@ -59,7 +65,7 @@ Bug fixes.
 !!!!!!!!!!!!
 
 VERSION 1!
-Added Notepad, Bug fixes, More apps, Timer.
+Added Notepad, Bug fixes, More apps, Timer. (BCD)
 
 !!!!!!!!!!!!
 
