@@ -13,7 +13,12 @@ NOTE
 Soon I might make this OS run a 2d version of Doom, because you guys keep on saying "MAKE IT RUN DOOM MAKE IT RUN DOOM" so I will.
 
 Changelog
-=========
+
+
+
+Version 2.18
+Fixing bugs including a user bug. 2D DOOM is not open to the public yet.
+
 Version 2.14
 Making 2D Version of DOOM. (BCD)
 
