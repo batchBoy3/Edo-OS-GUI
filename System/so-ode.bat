@@ -137,7 +137,7 @@ goto Loop2
 call MenuBar FileMain.txt f0
 Call Box 6 6 20 60 - - 87 2
 setlocal EnableDelayedExpansion
-for /f "tokens=* Delims=" %%x in (user1name.usr) do (
+for /f "tokens=* Delims=" %%x in (user.usr) do (
     set "variable=%%x"
 set "usrname=!usrname!%%x"
 )
@@ -162,7 +162,7 @@ Batbox /g 20 22 /d "]["
 Batbox /g 20 23 /d "]["
 Batbox /g 20 24 /d "]["
 Batbox /g 22 9 /d "<=="
-Batbox /g 26 8 /d "Logged in user:"
+Batbox /g 26 8 /d "All users:"
 Batbox /g 26 10 /d "%usrname%"
 
 goto choosetab

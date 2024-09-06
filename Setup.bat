@@ -1,9 +1,8 @@
 @echo off
 cls
-
+mode 94,22
 title Edo OS Install
 cd System
-fstoggle 1
 Call Box 1 1 20 2 - - 87 1
 call Box.bat 1 1 20 6 - - 87 1
 ping localhost -n 1 >nul

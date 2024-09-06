@@ -2,7 +2,7 @@
 :FCP
 color 07
 cls
-fstoggle 1
+mode 120,70
 echo FCP is loading...
  
 echo Checking files...
