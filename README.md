@@ -14,7 +14,10 @@ Soon I might make this OS run a 2d version of Doom, because you guys keep on say
 
 Changelog
 
-
+Version 2.30
+Added an interactive OOBE setup. Will start after PB setup.
+2D Doom is not open to the public yet. Expect bugs in the OOBE.
+Still trying to fix them.
 
 Version 2.18
 Fixing bugs including a user bug. 2D DOOM is not open to the public yet.
