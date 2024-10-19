@@ -176,12 +176,13 @@ if %errorlevel%==1 goto installerror
 copy Fn.dll %edoinstall% >nul
 if %errorlevel%==1 goto installerror
 copy droll.bat %edoinstall% >nul
+copy oobesetup.bat %edoinstall% >nul
 if %errorlevel%==1 goto installerror
 call Box.bat 1 1 20 90 - - 87 1
 Batbox /g 2 2 /d "Edo OS Installer"
 Batbox /g 18 6 /d "Setup Finished."
 ping localhost -n 3 >nul
 %edoinstall%
-mode 140,60
-call FCP.bat
+call oobesetup.bat
+
 exit
