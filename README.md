@@ -1,6 +1,6 @@
 EDO OS GUI
 ==========
-Edo OS GUI is a Batch OS that can run on a Windows based OS.
+Edo OS GUI is a batch os that can run on a windows based os.
 Edo OS GUI gets atleast 1 update every week/month. Keep yours updated!
 If there are any bugs report them to quantico.noreply@gmail.com
 
@@ -13,8 +13,6 @@ NOTE
 Soon I might make this OS run a 2d version of Doom, because you guys keep on saying "MAKE IT RUN DOOM MAKE IT RUN DOOM" so I will.
 
 Changelog
-Version 2.36
-Added a Verify Folder setting. (ON by default and cannot be changed inside of OS, you will have to edit the code.) NOTE: This isnt completely finished yet, but will be. Expect minor bugs.
 
 Version 2.30
 Added an interactive OOBE setup. Will start after PB setup.
